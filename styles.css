@@ -50,7 +50,8 @@ a {
 
 .brand img {
   display: block;
-  width: 132px;
+  width: auto;
+  height: 54px;
   image-rendering: pixelated;
 }
 
