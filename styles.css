@@ -231,6 +231,30 @@ footer p {
   margin-bottom: 18px;
 }
 
+.trailer {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.42fr) minmax(0, 0.58fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(36px, 7vw, 88px);
+  background: #12101a;
+  border-bottom: 2px solid var(--line);
+}
+
+.trailer-copy p {
+  margin: 0;
+  color: #d9d0a2;
+  line-height: 1.55;
+}
+
+.trailer video {
+  display: block;
+  width: 100%;
+  background: #07070b;
+  border: 2px solid #42383b;
+  image-rendering: pixelated;
+}
+
 .signup {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
@@ -358,6 +382,7 @@ footer p {
   .feature-band,
   .signup,
   .story-grid,
+  .trailer,
   .requirement-grid {
     grid-template-columns: 1fr;
   }
