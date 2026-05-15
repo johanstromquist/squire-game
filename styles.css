@@ -148,7 +148,7 @@ button {
   color: #211909;
 }
 
-.model-note {
+.download-note {
   max-width: 620px;
   margin: 0;
   color: #d9d0a2;
@@ -289,6 +289,46 @@ input[type="email"] {
   min-height: 1.5em;
 }
 
+.requirements {
+  padding: clamp(34px, 6vw, 72px);
+  background: #101015;
+  border-bottom: 2px solid var(--line);
+}
+
+.requirements h2 {
+  max-width: 1160px;
+  margin: 0 auto 22px;
+}
+
+.requirement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  max-width: 1160px;
+  margin: 0 auto;
+  background: var(--line);
+}
+
+.requirement-grid div {
+  min-height: 150px;
+  padding: 22px;
+  background: #0b0c11;
+}
+
+.requirement-grid h3 {
+  margin: 0 0 12px;
+  color: #fff3a7;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.requirement-grid p {
+  margin: 0;
+  color: #d9d0a2;
+  line-height: 1.55;
+}
+
 footer {
   display: grid;
   gap: 14px;
@@ -316,7 +356,8 @@ footer p {
   .hero,
   .feature-band,
   .signup,
-  .story-grid {
+  .story-grid,
+  .requirement-grid {
     grid-template-columns: 1fr;
   }
 

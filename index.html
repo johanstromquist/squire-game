@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Squire</title>
-  <meta name="description" content="Squire is a free retro adventure about oaths, paper law, bells, shadows, and one very determined page.">
+  <meta name="description" content="Squire is a free retro adventure that brings back the nostalgia of parser-driven fairytale quests.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav aria-label="Primary navigation">
       <a href="#download">Download</a>
       <a href="#newsletter">Updates</a>
-      <a href="https://github.com/johanstromquist/squire-game">GitHub</a>
+      <a href="#requirements">Requirements</a>
     </nav>
   </header>
 
@@ -26,26 +26,26 @@
       </div>
       <div class="hero-copy">
         <img class="hero-logo" src="assets/squire-logo.png" alt="Squire">
-        <p class="tagline">A free VGA-style fairytale adventure about a stolen bell, a paper court, and a page who has to make an oath true.</p>
+        <p class="tagline">Experience the nostalgia of a hand-painted fairytale quest, where every typed command nudges a stubborn little kingdom closer to its oath.</p>
         <div class="download-actions" id="download">
           <a class="button primary" href="downloads/Squire-mac-arm64.zip">Download for Mac</a>
           <a class="button" href="downloads/Squire-win-cuda-broad.zip">Download for Windows</a>
         </div>
-        <p class="model-note">Downloads include the game executable and runtime files. LLM dialogue needs the optional <a href="https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/blob/main/Qwen3.5-4B-Q4_K_M.gguf">Qwen GGUF model</a> placed in <code>refs/models</code>.</p>
+        <p class="download-note">Free release builds for modern Mac and Windows machines.</p>
       </div>
     </section>
 
     <section class="feature-band" aria-label="Game highlights">
       <div class="feature-text">
-        <h1>Old-school parser adventure, modern conversation.</h1>
+        <h1>A lost adventure from the golden age that never was.</h1>
         <p>Explore a handmade fairytale kingdom, speak with its citizens, solve object puzzles, and follow the trail from the castle yard to the Chapel of Noon.</p>
       </div>
       <ul class="features">
-        <li>Typed commands: look, talk, ask, take, use, give, play, ring, and more.</li>
-        <li>Local LLM-backed NPC dialogue when the model is installed.</li>
-        <li>Animated VGA-style cutscenes, sprites, music, and ceremony finale.</li>
-        <li>Windows CUDA build for fast dialogue on NVIDIA RTX GPUs.</li>
-        <li>Mac build with bundled runtime libraries and package-local loading.</li>
+        <li>Type your way through a parser adventure built around curiosity and careful observation.</li>
+        <li>Meet a kingdom of clerks, ghosts, gardeners, geese, dragons, foxes, and queens.</li>
+        <li>Untangle paper law, stolen bells, true tones, thorn mazes, and promises gone crooked.</li>
+        <li>Enjoy VGA-inspired artwork, animated cutscenes, original music, and a ceremonial finale.</li>
+        <li>Play for free and revisit the feel of the adventures that used to come in big boxes.</li>
       </ul>
     </section>
 
@@ -86,12 +86,30 @@
         <p class="form-status" id="form-status" role="status"></p>
       </form>
     </section>
+
+    <section class="requirements" id="requirements" aria-label="System requirements">
+      <h2>System requirements</h2>
+      <div class="requirement-grid">
+        <div>
+          <h3>Mac</h3>
+          <p>Apple Silicon Mac recommended. Download includes the game and required runtime files.</p>
+        </div>
+        <div>
+          <h3>Windows</h3>
+          <p>Windows 10 or 11, 64-bit. An NVIDIA RTX GPU is recommended for fast local character conversations.</p>
+        </div>
+        <div>
+          <h3>Optional dialogue model</h3>
+          <p>For enhanced local NPC conversations, place <a href="https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/blob/main/Qwen3.5-4B-Q4_K_M.gguf">Qwen3.5-4B-Q4_K_M.gguf</a> in <code>refs/models</code>. The game still runs without it.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <img src="assets/sourcehill-logo.png" alt="SourceHill">
     <p>Produced by Master-Control. Screenplay by Codex, Claude Code, and Johan Stromquist. Directed by Johan Stromquist. Artwork by Image2. Music and special effects by Codex.</p>
-    <p><a href="https://github.com/johanstromquist/squire-game">Page repository</a> <span aria-hidden="true">/</span> Free release builds for Mac and Windows.</p>
+    <p>Free release builds for Mac and Windows.</p>
   </footer>
 
   <script src="app.js"></script>
